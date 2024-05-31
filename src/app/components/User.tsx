@@ -43,12 +43,12 @@ const Users: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container  mx-auto p-4">
       <h1 className="text-2xl font-bold mb-4">User List</h1>
       {loading ? (
         <p className="text-gray-500">Loading...</p>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 min-h-screen sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           <AnimatePresence>
             {users.map((user) => (
               <UserCard key={user.ID} user={user} />
@@ -64,7 +64,7 @@ const Users: React.FC = () => {
         >
           Prev
         </button>
-        <span className="self-center">Page {page}</span>
+        <span className="self-center text-white">Page {page}</span>
         <button
           onClick={handleNext}
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"

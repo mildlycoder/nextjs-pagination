@@ -19,7 +19,7 @@ interface UserCardProps {
 const UserCard: React.FC<UserCardProps> = ({ user }) => {
   return (
     <motion.div
-      className="max-w-sm rounded overflow-hidden bg-gradient-to-r from-purple-400 to-purple-600 shadow-lg p-4 bg-white"
+      className="max-w-sm rounded overflow-hidden bg-gradient-to-r from-indigo-500 to-blue-500 shadow-lg p-4 bg-white"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}

@@ -2,7 +2,7 @@ import Users from "./components/User";
 
 export default function Home() {
   return (
-    <div className="bg-gradient-to-br from-blue-400 to-indigo-600 min-h-screen">
+    <div className=" bg-gradient-to-r from-blue-900 to-slate-800 min-h-screen">
       <Users />
     </div>
   );
